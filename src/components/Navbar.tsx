@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { TbMenu2, TbX } from "react-icons/tb";
 import { navItems, site } from "@/data/site";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -58,27 +59,33 @@ export function Navbar() {
             </li>
           ))}
           <li>
+            <ThemeToggle className="ml-1" />
+          </li>
+          <li>
             <a
               href={site.resumeUrl}
               download
-              className="ml-2 rounded-md border border-accent/40 bg-accent/10 px-3 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent/20"
+              className="ml-1 rounded-md border border-accent/40 bg-accent/10 px-3 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent/20"
             >
               Resume
             </a>
           </li>
         </ul>
 
-        {/* Mobile toggle */}
-        <button
-          type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-foreground md:hidden"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <TbX size={22} /> : <TbMenu2 size={22} />}
-        </button>
+        {/* Mobile controls */}
+        <div className="flex items-center gap-1 md:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md p-2 text-foreground"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <TbX size={22} /> : <TbMenu2 size={22} />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
