@@ -74,6 +74,23 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/*
+ * Smoothly cross-fade theme-driven colors when toggling light/dark.
+ * Specificity 0 (via *) so element-level transition utilities still win.
+ * Reduced-motion users are opted out by the block at the end of this file.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  *,
+  *::before,
+  *::after {
+    transition:
+      background-color 0.35s ease,
+      border-color 0.35s ease,
+      color 0.35s ease,
+      fill 0.35s ease;
+  }
+}
+
 /* Ambient background glows behind the whole page */
 body::before {
   content: "";

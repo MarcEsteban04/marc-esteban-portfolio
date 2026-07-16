@@ -13,12 +13,7 @@ import type { ReactNode } from "react";
  */
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="dark"
-      enableSystem={false}
-      disableTransitionOnChange
-    >
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <ReactLenis
         root
         options={{ lerp: 0.1, smoothWheel: true, anchors: { offset: -72 } }}
