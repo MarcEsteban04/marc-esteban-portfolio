@@ -7,11 +7,25 @@ import {
   TbMessages,
   TbListCheck,
   TbBrain,
+  TbStack2,
+  TbSparkles,
 } from "react-icons/tb";
 
 export type Strength = { title: string; icon: IconType; blurb: string };
 
 export const strengths: Strength[] = [
+  {
+    title: "Full-Stack Development",
+    icon: TbStack2,
+    blurb:
+      "Building end-to-end web apps across frontend, backend, and databases.",
+  },
+  {
+    title: "AI-Assisted Development",
+    icon: TbSparkles,
+    blurb:
+      "Using AI tools like Claude Code to ship features faster and smarter.",
+  },
   {
     title: "Problem Solving",
     icon: TbBulb,
