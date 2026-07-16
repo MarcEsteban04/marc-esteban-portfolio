@@ -36,7 +36,7 @@ The contact form sends email via Gmail SMTP using a **Google App Password**.
    ```
    GMAIL_USER=your-address@gmail.com
    GMAIL_APP_PASSWORD=your-16-char-app-password
-   CONTACT_TO=marc@acoretechnology.com
+   CONTACT_TO=marcdelacruzesteban@gmail.com
    ```
 
 Without these vars the form returns a graceful "not configured" message instead of crashing.
