@@ -82,7 +82,7 @@ export function HeroSection() {
           >
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-black shadow-lg shadow-accent-glow transition-all hover:-translate-y-0.5 hover:brightness-110"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-glow transition-all hover:-translate-y-0.5 hover:brightness-110"
             >
               <TbArrowDown size={18} /> View Projects
             </a>
