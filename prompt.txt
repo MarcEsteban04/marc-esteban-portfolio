@@ -1,0 +1,301 @@
+# CLAUDE CODE PORTFOLIO PROMPT
+
+Create a modern, production-ready developer portfolio website for **Marc Esteban**, a Junior Full-Stack Web Developer and Computer Science graduate.
+
+Build the project using **React, Next.js, or Astro** with a strong focus on responsiveness, accessibility, performance, and clean component architecture.
+
+The portfolio should reflect someone who is a **fresh graduate with practical freelance experience, AI-assisted development skills, and experience building business systems and automation solutions.**
+
+---
+
+## 1. HERO SECTION
+
+* Headline:
+  **"Hi, I'm Marc Esteban"**
+
+* Animated typing roles:
+
+  * Full-Stack Web Developer
+  * AI-Assisted Developer
+  * Computer Science Graduate
+  * Freelance Web Developer
+
+* Short introduction:
+
+  "I build modern web applications and business systems using JavaScript, React, Node.js, PHP, and AI-powered workflows. I enjoy creating practical solutions that improve efficiency and deliver real value to users and businesses."
+
+* CTA Buttons:
+
+  * View Projects
+  * Download Resume
+  * Contact Me
+
+* Social links:
+
+  * GitHub
+  * LinkedIn
+  * Email
+
+* Add subtle terminal-inspired UI elements or code snippets in the background.
+
+---
+
+## 2. ABOUT SECTION
+
+Include:
+
+* Computer Science graduate from ACLC College of Sta. Maria.
+* Freelance web developer with approximately 3 years of hands-on experience building websites and business applications.
+* Experience developing inventory management systems, POS solutions, and web applications.
+* Experience integrating AI tools such as Google Gemini to improve automation and productivity.
+* Strong interest in AI-assisted software development and modern web technologies.
+
+Display:
+
+* Years of experience
+* Number of projects completed
+* Technologies used
+* AI tools utilized
+
+Optional personal touch:
+
+"I enjoy learning emerging AI technologies and finding ways to use them to build software faster and smarter."
+
+---
+
+## 3. SKILLS SECTION
+
+Display skills as an icon grid instead of progress bars.
+
+### Frontend
+
+* HTML5
+* CSS3
+* Tailwind CSS
+* Bootstrap
+* JavaScript
+* TypeScript
+* React.js
+
+### Backend
+
+* Node.js
+* Express.js
+* PHP
+* REST APIs
+* JWT Authentication
+
+### Databases
+
+* MySQL
+* MongoDB
+
+### Tools & Technologies
+
+* Git & GitHub
+* SEO
+* AI Development Tools
+* Google Gemini API
+* Responsive Design
+
+### Currently Learning
+
+* Next.js
+* Supabase
+* Advanced AI integrations
+
+---
+
+## 4. PROJECTS SECTION
+
+Feature 3-5 projects from resume and freelance work.
+
+### Inventory Management System with POS
+
+* Built using PHP, MySQL, JavaScript, HTML, and CSS.
+* Included inventory tracking and integrated Point-of-Sale functionality.
+* Reduced manual inventory entry errors by 40%.
+
+### AI-Powered Automation Project
+
+* Integrated Google Gemini AI into workflows.
+* Improved operational efficiency by 25%.
+* Demonstrated practical AI implementation for businesses.
+
+### Freelance Business Website Projects
+
+* Responsive websites for clients.
+* Mobile-first design.
+* SEO optimization and performance improvements.
+
+### MERN Stack Application
+
+* React frontend with Node.js backend.
+* MongoDB database integration.
+* Authentication and API implementation.
+
+Each project card should contain:
+
+* Screenshot or mockup
+* Description
+* Tech stack tags
+* GitHub repository link
+* Live demo link
+* Key business outcome or measurable impact
+
+Hover effects:
+
+* Slight elevation
+* Shadow increase
+* Smooth animation
+
+---
+
+## 5. EXPERIENCE SECTION
+
+Create a vertical timeline.
+
+### Freelance Web Developer
+
+**January 2023 – Present**
+
+* Deliver custom web solutions for clients.
+* Build responsive websites and business applications.
+* Focus on performance, usability, and maintainability.
+
+### IT Support — Municipality of Sta. Maria, Bulacan
+
+**August 2024 – December 2024**
+
+* Provided technical support and troubleshooting.
+* Performed OS installations and maintenance.
+* Improved IT efficiency and uptime by 25%.
+
+### Full-Stack Developer — M5B Hardware
+
+**September 2023 – October 2023**
+
+* Developed an inventory management and POS system.
+* Reduced manual entry errors by 40%.
+* Built using PHP, JavaScript, and MySQL.
+
+---
+
+## 6. EDUCATION SECTION
+
+### ACLC College of Sta. Maria
+
+Bachelor of Science in Computer Science
+
+* GPA: 3.60 / 4.0
+* 2021 – 2025
+
+Awards:
+
+* Recognition for Technical Mastery in Server-Side Programming and Integration (2025)
+
+---
+
+## 7. CASE STUDY PAGES
+
+Create dedicated pages for major projects including:
+
+* Problem statement
+* Business goals
+* Technologies used
+* Challenges encountered
+* Development process
+* Results achieved
+* Lessons learned
+* Future improvements
+
+Include areas for:
+
+* Architecture diagrams
+* Screenshots
+* Repository links
+* Live demo links
+
+---
+
+## 8. STRENGTHS SECTION
+
+Display as cards:
+
+* Problem Solving
+* Adaptability
+* Leadership
+* Time Management
+* Communication
+* Attention to Detail
+* Critical Thinking
+
+---
+
+## 9. CONTACT SECTION
+
+Headline:
+
+**"Let's Build Something Together."**
+
+Include:
+
+* Email address
+* LinkedIn profile
+* GitHub profile
+* Contact form
+
+Message:
+
+"I'm open to junior developer opportunities, freelance projects, and collaborations involving AI and web development."
+
+---
+
+## 10. CLAUDE CODE IMPLEMENTATION NOTES
+
+Create reusable components:
+
+* HeroSection
+* AboutSection
+* SkillsGrid
+* ProjectGrid
+* ProjectCard
+* ExperienceTimeline
+* EducationSection
+* ContactCTA
+
+Technical requirements:
+
+* Mobile-first responsive design
+* Semantic HTML
+* Accessibility support
+* Keyboard navigation
+* SEO optimization
+* Open Graph metadata
+* Fast page loads
+* Image optimization
+* Dynamic project data arrays
+
+Recommended stack:
+
+* Next.js
+* Tailwind CSS
+* Framer Motion
+* TypeScript
+
+---
+
+## DESIGN DIRECTION
+
+Theme:
+
+* Dark mode preferred
+* Developer aesthetic
+* Terminal-inspired details
+* Subtle animations
+* Modern glassmorphism accents
+* Clean typography
+
+The portfolio should communicate:
+
+**"A motivated junior developer who combines practical software development skills with modern AI tools to deliver business value."**

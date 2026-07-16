@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'JetBrains Mono','Courier New',monospace">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="20%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#06070a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#06070a"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04">
+    <path d="M0 157.5H1200M0 315H1200M0 472.5H1200M300 0V630M600 0V630M900 0V630"/>
+  </g>
+  <text x="90" y="150" fill="#34d399" font-size="26">$ whoami</text>
+  <text x="90" y="270" fill="#e6e8ec" font-size="82" font-weight="700" font-family="Inter,system-ui,sans-serif">Marc Esteban</text>
+  <text x="90" y="345" fill="url(#accent)" font-size="42" font-weight="600" font-family="Inter,system-ui,sans-serif">Full-Stack Web Developer</text>
+  <text x="90" y="415" fill="#9aa4b2" font-size="28" font-family="Inter,system-ui,sans-serif">React · Node.js · PHP · AI-Assisted Development</text>
+  <text x="90" y="545" fill="#6b7480" font-size="24">&gt; building practical solutions that deliver business value<tspan fill="#34d399">_</tspan></text>
+  <rect x="1.5" y="1.5" width="1197" height="627" fill="none" stroke="url(#accent)" stroke-opacity="0.4" stroke-width="3"/>
+</svg>
