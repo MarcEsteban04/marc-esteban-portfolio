@@ -3,13 +3,35 @@ export type Experience = {
   org: string;
   period: string;
   points: string[];
+  /** Optional tech-stack tags shown under the role. */
+  stack?: string[];
 };
 
 export const experiences: Experience[] = [
   {
+    role: "Full-Stack Developer · Information Technology",
+    org: "Acore Technology",
+    period: "December 2025 – Present",
+    points: [
+      "Deliver new features and forms, and resolve issues through bug reports.",
+      "Manage ERP and CRM updates and feature development.",
+      "Use AI-assisted development with Claude Code to build and ship faster.",
+      "Work directly with clients to troubleshoot and fix problems in their systems.",
+      "Migrate data from Zoho and Shopify into company systems.",
+    ],
+    stack: [
+      "Next.js",
+      "Supabase",
+      "AWS",
+      "Azure",
+      "Shopify Integration",
+      "Zoho Integration",
+    ],
+  },
+  {
     role: "Freelance Web Developer",
     org: "Self-employed",
-    period: "January 2023 – Present",
+    period: "January 2023 – December 2025",
     points: [
       "Deliver custom web solutions for clients across industries.",
       "Build responsive websites and business applications.",

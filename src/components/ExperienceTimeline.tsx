@@ -45,6 +45,18 @@ export function ExperienceTimeline() {
                       </li>
                     ))}
                   </ul>
+                  {exp.stack && (
+                    <ul className="mt-3 flex flex-wrap gap-2">
+                      {exp.stack.map((tech) => (
+                        <li
+                          key={tech}
+                          className="rounded-md border border-border-subtle bg-surface px-2 py-1 font-mono text-[11px] text-muted"
+                        >
+                          {tech}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </Reveal>
               </li>
             ))}
