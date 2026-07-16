@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { SkillsGrid } from "@/components/SkillsGrid";
 import { ProjectGrid } from "@/components/ProjectGrid";
+import { ContributionsSection } from "@/components/ContributionsSection";
 import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 import { EducationSection } from "@/components/EducationSection";
 import { StrengthsSection } from "@/components/StrengthsSection";
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutSection />
         <SkillsGrid />
         <ProjectGrid />
+        <ContributionsSection />
         <ExperienceTimeline />
         <EducationSection />
         <StrengthsSection />

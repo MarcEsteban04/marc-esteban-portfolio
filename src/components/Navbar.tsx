@@ -47,7 +47,7 @@ export function Navbar() {
         </a>
 
         {/* Desktop nav */}
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
             <li key={item.href}>
               <a
@@ -73,7 +73,7 @@ export function Navbar() {
         </ul>
 
         {/* Mobile controls */}
-        <div className="flex items-center gap-1 md:hidden">
+        <div className="flex items-center gap-1 lg:hidden">
           <ThemeToggle />
           <button
             type="button"
