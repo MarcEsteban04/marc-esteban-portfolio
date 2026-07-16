@@ -18,8 +18,8 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/marc-esteban",
     email: "mailto:marc@acoretechnology.com",
   },
-  // Place a real PDF at /public/resume.pdf to make this download work.
-  resumeUrl: "/resume.pdf",
+  // Served from /public. Swap the file there to update the download.
+  resumeUrl: "/marc-resume.pdf",
 } as const;
 
 export type NavItem = { label: string; href: string };

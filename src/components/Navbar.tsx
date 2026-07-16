@@ -27,7 +27,7 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled
-          ? "glass border-b border-border-subtle"
+          ? "border-b border-border-subtle bg-background/90 backdrop-blur-md supports-[backdrop-filter]:bg-background/75"
           : "border-b border-transparent"
       }`}
     >
@@ -85,7 +85,7 @@ export function Navbar() {
       {open && (
         <div
           id="mobile-menu"
-          className="glass border-t border-border-subtle md:hidden"
+          className="border-t border-border-subtle bg-background/95 backdrop-blur-md md:hidden"
         >
           <ul className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4">
             {navItems.map((item) => (
