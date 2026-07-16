@@ -4,10 +4,16 @@ import { useEffect, useState } from "react";
 import { TbMenu2, TbX } from "react-icons/tb";
 import { navItems, site } from "@/data/site";
 import { ThemeToggle } from "./ThemeToggle";
+import { useScrollSpy } from "@/hooks/useScrollSpy";
+
+// Stable reference (computed once at module scope) so the scroll-spy
+// effect doesn't re-run on every render.
+const sectionIds = navItems.map((item) => item.href.slice(1));
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const activeId = useScrollSpy(sectionIds);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -48,16 +54,30 @@ export function Navbar() {
 
         {/* Desktop nav */}
         <ul className="hidden items-center gap-1 lg:flex">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <a
-                href={item.href}
-                className="rounded-md px-3 py-2 text-sm text-muted transition-colors hover:text-foreground"
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
+          {navItems.map((item) => {
+            const isActive = activeId === item.href.slice(1);
+            return (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  aria-current={isActive ? "true" : undefined}
+                  className={`relative rounded-md px-3 py-2 text-sm transition-colors ${
+                    isActive
+                      ? "text-foreground"
+                      : "text-muted hover:text-foreground"
+                  }`}
+                >
+                  {item.label}
+                  <span
+                    aria-hidden
+                    className={`absolute inset-x-3 -bottom-[1px] h-[2px] rounded-full bg-accent transition-opacity ${
+                      isActive ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                </a>
+              </li>
+            );
+          })}
           <li>
             <ThemeToggle className="ml-1" />
           </li>
@@ -95,17 +115,31 @@ export function Navbar() {
           className="border-t border-border-subtle bg-background/95 backdrop-blur-md md:hidden"
         >
           <ul className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="block rounded-md px-3 py-2.5 text-base text-muted transition-colors hover:bg-white/5 hover:text-foreground"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
+            {navItems.map((item) => {
+              const isActive = activeId === item.href.slice(1);
+              return (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    aria-current={isActive ? "true" : undefined}
+                    className={`flex items-center gap-2 rounded-md px-3 py-2.5 text-base transition-colors ${
+                      isActive
+                        ? "bg-accent/10 text-accent"
+                        : "text-muted hover:bg-white/5 hover:text-foreground"
+                    }`}
+                  >
+                    <span
+                      aria-hidden
+                      className={`h-1.5 w-1.5 rounded-full bg-accent transition-opacity ${
+                        isActive ? "opacity-100" : "opacity-0"
+                      }`}
+                    />
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
             <li>
               <a
                 href={site.resumeUrl}
