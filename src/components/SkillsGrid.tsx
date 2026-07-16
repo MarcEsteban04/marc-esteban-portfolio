@@ -22,14 +22,15 @@ export function SkillsGrid() {
                 <span className="text-accent">#</span> {category.title}
               </h3>
               <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-                {category.skills.map(({ name, icon: Icon }) => (
+                {category.skills.map(({ name, icon: Icon, color }) => (
                   <li
                     key={name}
                     className="glass group flex flex-col items-center gap-2 rounded-xl px-3 py-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:bg-surface-strong"
                   >
                     <Icon
                       size={30}
-                      className="text-muted transition-colors duration-300 group-hover:text-accent"
+                      style={{ color }}
+                      className="transition-transform duration-300 group-hover:scale-110"
                       aria-hidden
                     />
                     <span className="text-xs font-medium text-foreground/90">
