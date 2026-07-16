@@ -10,13 +10,13 @@ export const site = {
     "Junior full-stack web developer and Computer Science graduate building modern web applications, business systems, and AI-powered workflows with JavaScript, React, Node.js, and PHP.",
   // Used for canonical/OG URLs and sitemap. Replace with your production domain.
   url: "https://marcesteban.dev",
-  email: "marcdelacruzesteban@gmail.com",
+  email: "marc@acoretechnology.com",
   location: "Sta. Maria, Bulacan, Philippines",
   // TODO: replace placeholders with real profile URLs
   socials: {
     github: "https://github.com/MarcEsteban04",
     linkedin: "https://www.linkedin.com/in/marc-esteban",
-    email: "mailto:marcdelacruzesteban@gmail.com",
+    email: "mailto:marc@acoretechnology.com",
   },
   // Served from /public. Swap the file there to update the download.
   resumeUrl: "/marc-resume.pdf",
