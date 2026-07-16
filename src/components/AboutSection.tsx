@@ -13,7 +13,7 @@ export function AboutSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="about"
-          title="A fresh graduate who ships real solutions"
+          title="A full-stack developer who ships real solutions"
         />
 
         <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-5">

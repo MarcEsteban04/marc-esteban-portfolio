@@ -16,10 +16,18 @@ import {
   SiGit,
   SiGithub,
   SiGooglegemini,
+  SiCursor,
+  SiClaude,
   SiNextdotjs,
   SiSupabase,
 } from "react-icons/si";
-import { TbApi, TbSeo, TbDeviceMobileCode, TbBrain } from "react-icons/tb";
+import {
+  TbApi,
+  TbSeo,
+  TbDeviceMobileCode,
+  TbBrain,
+  TbBrandOpenai,
+} from "react-icons/tb";
 
 export type Skill = { name: string; icon: IconType };
 export type SkillCategory = { title: string; skills: Skill[] };
@@ -57,12 +65,19 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Tools & Technologies",
     skills: [
-      { name: "Git & GitHub", icon: SiGit },
+      { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
       { name: "SEO", icon: TbSeo },
-      { name: "AI Dev Tools", icon: TbBrain },
-      { name: "Google Gemini API", icon: SiGooglegemini },
       { name: "Responsive Design", icon: TbDeviceMobileCode },
+    ],
+  },
+  {
+    title: "AI Tools",
+    skills: [
+      { name: "Cursor", icon: SiCursor },
+      { name: "Google Gemini", icon: SiGooglegemini },
+      { name: "Claude Code", icon: SiClaude },
+      { name: "ChatGPT", icon: TbBrandOpenai },
     ],
   },
   {
